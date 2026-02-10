@@ -8,4 +8,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  base: "https://parassofttech.github.io/Razorpay/",
 })
