@@ -5,190 +5,155 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="src/index.css" rel="stylesheet">
   <title>Razorpay</title>
-   <script type="module" src="/src/main.jsx"></script>
-   
-
 </head>
 
-<body>
+<body class="bg-white">
 
-
-  <h1 class="text-4xl font-bold text-blue-700">Hello Tailwind!</h1>
-
-
-  <div class="w-full relative ">
+  <div class="relative">
     <!-- NavBar Of the Razorpay clone -->
 
-    <nav class=" nav w-full h-20 fixed top-0 bg-white z-50 transition-shadow duration-300 ">
-      <div class="header_nav relative flex justify-between items-center w-[1080px] m-auto">
+    <nav class="w-full h-20 fixed top-0 bg-white z-50 shadow transition-shadow duration-300">
+      <div class="relative flex justify-between items-center w-[1080px] mx-auto">
 
-        <div class="flex items-center"><a href="\"><img src="/src/assets/Razorpay_logo-removebg-preview.png"
-              class="main_logo h-24 bg-none "></a>
+        <div class="flex items-center">
+          <a href="/"><img src="/src/assets/Razorpay_logo-removebg-preview.png"
+              class="h-24 bg-none"></a>
         </div>
 
-
-        <div class="mid_nav flex space-x-7">
-          <li class="text-black hover:text-blue-700 hover:underline font-bold"><a href="\">Payment</a>
-            <div class="w-full h-1 hidden  bg-blue-700 hover:block"></div>
+        <ul class="flex space-x-7">
+          <li class="text-black hover:text-blue-700 font-bold relative">
+            <a href="/">Payment</a>
+            <div class="absolute bottom-0 left-0 w-full h-1 bg-blue-700 hidden group-hover:block"></div>
           </li>
-
-          <li class="text-black hover:text-blue-700 hover:underline  font-bold"><a href="\">Banking</a>
-            <div class="w-full h-1 hidden  bg-blue-700 hover:block"></div>
+          <li class="text-black hover:text-blue-700 font-bold relative">
+            <a href="/">Banking</a>
           </li>
-
-          <li class="text-black hover:text-blue-700 hover:underline  font-bold"><a href="\">Payroll</a>
-            <div class="w-full h-1 hidden  bg-blue-700 hover:block"></div>
+          <li class="text-black hover:text-blue-700 font-bold relative">
+            <a href="/">Payroll</a>
           </li>
-
-          <li class="text-black hover:text-blue-700 hover:underline font-bold"><a href="\">Engages</a>
-            <div class="w-full h-1 hidden  bg-blue-700 hover:block"></div>
+          <li class="text-black hover:text-blue-700 font-bold relative">
+            <a href="/">Engages</a>
           </li>
-
-          <li class="text-black  hover:text-blue-700 hover:underline font-bold"><a href="\">Partners</a>
-            <div class="w-full h-1 hidden  bg-blue-700 hover:block"></div>
+          <li class="text-black hover:text-blue-700 font-bold relative">
+            <a href="/">Partners</a>
           </li>
-
-          <li class="text-black  hover:text-blue-700 hover:underline font-bold"><a href="\">Resources</a>
-            <div class="w-full h-1 hidden  bg-blue-700 hover:block"></div>
+          <li class="text-black hover:text-blue-700 font-bold relative">
+            <a href="/">Resources</a>
           </li>
-
-          <li class="text-black  hover:text-blue-700 hover:underline font-bold"><a href="\">Pricing</a>
-            <div class="w-full h-1 hidden  bg-blue-700 hover:block"></div>
+          <li class="text-black hover:text-blue-700 font-bold relative">
+            <a href="/">Pricing</a>
           </li>
-        </div>
+        </ul>
 
-        <div class="ri_nav flex flex-row space-x-7 items-center">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt=""
-            class="w-[28px] h-[20px]">
-
-          <button class="login text-blue-700 border pt-1.5 pb-1.5 pl-4 pr-4 rounded font-bold cursor-pointer">Log
-            in</button>
-
+        <div class="flex items-center space-x-7">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png"
+            class="w-7 h-5">
+          <button class="text-blue-700 border px-4 py-1.5 rounded font-bold cursor-pointer">Log in</button>
           <button
-            class="text-white bg-blue-800 p-3 pl-4 pr-4 rounded text-xs font-bold hover:bg-blue-700 cursor-pointer">Sign
+            class="text-white bg-blue-800 px-4 py-3 rounded text-xs font-bold hover:bg-blue-700 cursor-pointer">Sign
             Up</button>
-
-
-
         </div>
 
-        <div class="flex items-center"><button
-            class="hidden_login text-blue-700 border pt-1.5 pb-1.5 pl-4 pr-4 rounded font-bold cursor-pointer hidden absolute right-[80px]">Login
-            -></button></div>
+        <div class="flex items-center">
+          <button
+            class="hidden absolute right-20 text-blue-700 border px-4 py-1.5 rounded font-bold cursor-pointer">Login
+            -></button>
+        </div>
 
-        <div class="burger flex-col  hidden absolute right-7">
-          <div class=" bg-blue-800"></div>
-          <div class=" bg-blue-800"></div>
-          <div class=" bg-blue-800"></div>
+        <div class="hidden flex-col absolute right-7 space-y-1">
+          <div class="bg-blue-800 h-1"></div>
+          <div class="bg-blue-800 h-1"></div>
+          <div class="bg-blue-800 h-1"></div>
         </div>
 
       </div>
-
-
-
     </nav>
 
     <!-- Hero section or first Section -->
 
-    <section class="w-full relative top-24 pt-7 pb-[60px] mb-[40px] bg-blue-950">
-      <div class="hero_section flex w-[1080px] m-auto justify-evenly mt-7 mb-7">
-        <div class="hero_sectionleft w-[40%] ">
+    <section class="w-full relative pt-24 pb-16 mb-10 bg-blue-950">
+      <div class="flex justify-evenly w-[1080px] mx-auto mt-7 mb-7">
+        <div class="w-2/5">
           <h1 class="text-4xl font-bold pl-2 mt-4 text-white">Power your finance, grow your business</h1>
-          <p class="pl-2 mt-6 mb-6 opacity-75 text-white">Streamline payment management with a unified dashboard,
+          <p class="pl-2 mt-6 mb-6 text-white opacity-75">Streamline payment management with a unified dashboard,
             enabling
-            both online and in-person
-            payment collection while enhancing conversion rates and minimizing fraud.</p>
+            both online and in-person payment collection while enhancing conversion rates and minimizing fraud.</p>
           <button
-            class="mx-2 mt-7  p-3 px-4 bg-blue-800 hover:bg-blue-700 rounded text-white font-bold text-xs cursor-pointer">Sign
-            Up
+            class="mx-2 mt-7 px-4 py-3 bg-blue-800 hover:bg-blue-700 rounded text-white font-bold text-xs">Sign Up
             Now</button>
         </div>
-        <img src="/src/assets/razorpay-hero-removebg-preview.png" alt="" class="w-[45%] ">
+        <img src="/src/assets/razorpay-hero-removebg-preview.png" alt="" class="w-5/12">
       </div>
     </section>
 
     <!--Slope Image under Hero section  -->
 
-    <img src="/src/assets/slops.jpg" class="w-[100%] relative top-[50px]">
+    <img src="/src/assets/slops.jpg" class="w-full relative top-12">
 
     <!-- Automatic Scroll horizontaly -->
 
     <section
-      class="Automation_hori relative top-7 m-auto w-[1200px] h-[60px] flex bg-white justify-evenly items-center mb-7 mt-3 overflow-hidden">
+      class="relative top-7 mx-auto w-[1200px] h-15 flex bg-white justify-evenly items-center mb-7 mt-3 overflow-hidden">
       <div id="scroll-horizontally"
         class="w-full h-full flex items-center overflow-x-scroll whitespace-nowrap no-scrollbar">
-        <img src="/src/assets/co1.jpg" class="w-[300px] ">
-        <img src="/src/assets/co2.jpg" class="w-[300px] ">
-        <img src="/src/assets/co3.jpg" class="w-[300px] ">
-        <img src="/src/assets/co4.jpg" class="w-[300px] ">
-        <img src="/src/assets/co5.jpg" class="w-[300px] ">
-        <img src="/src/assets/co6.jpg" class="w-[300px] ">
-        <img src="/src/assets/co7.jpg" class="w-[300px] ">
-        <img src="/src/assets/co8.jpg" class="w-[300px] ">
-        <img src="/src/assets/co9.jpg" class="w-[300px] ">
+        <img src="/src/assets/co1.jpg" class="w-[300px]">
+        <img src="/src/assets/co2.jpg" class="w-[300px]">
+        <img src="/src/assets/co3.jpg" class="w-[300px]">
+        <img src="/src/assets/co4.jpg" class="w-[300px]">
+        <img src="/src/assets/co5.jpg" class="w-[300px]">
+        <img src="/src/assets/co6.jpg" class="w-[300px]">
+        <img src="/src/assets/co7.jpg" class="w-[300px]">
+        <img src="/src/assets/co8.jpg" class="w-[300px]">
+        <img src="/src/assets/co9.jpg" class="w-[300px]">
         <img src="/src/assets/co10.jpg" class="w-[300px]">
       </div>
-
 
       <div class="pointer-events-none absolute left-0 top-0 h-full w-8 bg-gradient-to-r from-white to-transparent z-10">
       </div>
 
-
-      <div
-        class="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent z-10">
+      <div class="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent z-10">
       </div>
-
 
     </section>
 
-    <h1 class="w-full text-center flex text-2xl font-bold justify-center items-center relative top-14 mb-[40px] p-3">
-      Accept Payment with Razorpay Payments Suits </h1>
+    <h1 class="text-2xl font-bold text-center relative top-14 mb-10 p-3">
+      Accept Payment with Razorpay Payments Suits
+    </h1>
 
     <!-- Second Section  which provides us the information of Payment Gateway  -->
 
-    <section class="w-full relative top-20 mt-6 mb-6 ">
+    <section class="w-full relative top-20 mt-6 mb-6">
       <div
-        class="Payment_gateway flex w-[1080px] m-auto justify-evenly items-center mt-7 mb-7 border rounded-2xl p-7 border-gray-300 ">
+        class="flex w-[1080px] mx-auto justify-evenly items-center mt-7 mb-7 border rounded-2xl p-7 border-gray-300">
 
-        <img src="/src/assets/razor_transaction.png" alt="" class="Payment_gateway_le h-[270px] w-[40%] rounded-2xl">
+        <img src="/src/assets/razor_transaction.png" alt="" class="h-[270px] w-2/5 rounded-2xl">
 
-        <div class="w-[40%] Payment_gateway_ri">
+        <div class="w-2/5">
           <h1 class="text-4xl font-bold pl-2 mt-4">Supercharge Your business with the all-powerfull <span
               class="text-blue-500">Payment Gateway</span> </h1>
-          <div class="flex flex-col">
-
-            <li class="font-bold opacity-60 flex gap-2 mt-2"><img src="/src/assets/icons8-check-mark-48.png"
-                width="18px">
-              100+
+          <ul class="flex flex-col mt-2 gap-2">
+            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18">100+
               Payment Methods</li>
-
-            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18px">
-              Industry Leading Success Rate</li>
-
-            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18px">
-              Superior Checkout Experiance</li>
-
-            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18px">
-              Easy
+            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18">Industry
+              Leading Success Rate</li>
+            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18">Superior
+              Checkout Experiance</li>
+            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18">Easy
               to Intigrate</li>
-
-            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18px">
-              Instante Settlements from 1 day</li>
-
-            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18px">
-              In-depth Reporting and Insights </li>
-
-          </div>
-          <div> <button
-              class="mx-2 mt-4  p-3 px-4 bg-blue-800 hover:bg-blue-700 rounded text-white font-bold text-xs cursor-pointer">Sign
-              Up
+            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18">Instante
+              Settlements from 1 day</li>
+            <li class="font-bold opacity-60 flex gap-2"><img src="/src/assets/icons8-check-mark-48.png" width="18">In-depth
+              Reporting and Insights</li>
+          </ul>
+          <div class="mt-4">
+            <button
+              class="mx-2 mt-4 px-4 py-3 bg-blue-800 hover:bg-blue-700 rounded text-white font-bold text-xs">Sign Up
               Now</button>
             <button
-              class="mx-2 mt-4  p-3 px-4 text-blue-800 hover:text-blue-700 rounded font-bold text-s cursor-pointer">Know
-              more ></button>
+              class="mx-2 mt-4 px-4 py-3 text-blue-800 hover:text-blue-700 rounded font-bold text-sm">Know more ></button>
           </div>
-
         </div>
       </div>
     </section>
