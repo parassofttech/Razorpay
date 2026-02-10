@@ -1,1 +1,220 @@
 @import "tailwindcss";
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+/* #scroll-container {
+  scroll-behavior: smooth;
+} */
+
+/* Scrollbar width and background */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Scrollbar Track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Scrollbar Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.e-commerce {
+  background-image: url('/src/assets/ReduceDropoffs.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Hide scrollbar but allow scroll */
+.no-scrollbar {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* for IE and Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari and Opera */
+}
+
+
+.Accept_nav li {
+  display: inline-block;
+}
+
+
+@media screen and (max-width:1200px) {
+
+  .header_nav {
+    width: 100%;
+    justify-content: space-between;
+  }     
+   
+  .mid_nav {
+    display: none;
+  }
+
+ .ri_nav{
+  position: absolute;
+  right: 78px;
+ }
+
+ .burger{
+  display: block;
+  width: 40px;
+ }
+ .burger div{
+  width: 100%;
+  margin: 3px;
+   height: 4px;
+ }
+
+  .hero_section {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+  .hero_sectionleft {
+    max-width: 900px;
+  }
+
+  .hero_section img {
+    max-width: 900px;
+  }
+
+  .Automation_hori {
+    max-width: 900px;
+    min-width: 300px;
+  }
+
+  .Payment_gateway {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Payment_gateway_le {
+    width: 60%;
+
+  }
+
+  .Payment_gateway_ri {
+    width: 60%;
+  }
+
+  .Accept {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:900px){
+
+  .header_nav {
+    width: 100%;
+  }
+
+  .e_com_text{
+  width: 60%;
+}
+
+.Automation_hori {
+    max-width: 90%;
+  }
+  
+}
+
+.mid_nav.mid_nav_toggle{
+  display: block;
+}
+
+@media screen and (max-width:660px){
+.header_nav {
+    width: 96%;
+  } 
+
+  .ri_nav{
+      display: none;
+  }
+
+  .hidden_login{
+    display: block;
+  }
+ .e_com_text{
+  width: 90%;
+}
+
+.auto_ver_scroll{
+  flex-direction: column;
+  gap: 90px;
+}
+/* .text_container{
+  width: 70%;
+} */
+
+/* .scrolled_ver img{
+  height: 400px;
+} */
+}
+
+
+@media screen and (max-width:600px){
+
+  .hero_sectionleft{
+    width: 90%;
+  }
+
+  .Payment_gateway_le{
+    width: 80%;
+  }
+ 
+}
+
+@media screen and (max-width:500px){
+
+  .Payment_gateway_le{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:400px){
+
+  .Payment_gateway_le{
+    width: 100%;
+  }
+.auto_ver_scroll{
+  flex-direction: column;
+  gap: 120px;
+}
+
+ .var_img{
+    width: 400px;
+ }
+.scrolled_ver{
+  height: 400px;
+}
+
+}
