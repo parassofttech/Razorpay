@@ -12,7 +12,7 @@
 <body class="bg-white">
 
   <!-- <div class="relative ">
-     NavBar Of the Razorpay clone -->
+     NavBar Of the Razorpay clone 
 
     <nav class="w-full h-20 overflow-x-hidden fixed top-0 right-0 bg-white z-50 shadow transition-shadow duration-300">
       <div class="relative flex justify-between items-center  mx-auto">
@@ -71,7 +71,7 @@
       </div>
     </nav>
 
-    <!-- Hero section or first Section -->
+    Hero section or first Section
 
     <section class="w-full overflow-x-hidden relative pt-24 pb-16  bg-blue-950">
       <div class="flex justify-evenly w-270 mx-auto mt-7 mb-7 flex-col md:flex-row">
@@ -90,11 +90,11 @@
       </div>
     </section>
 
-    <!--Slope Image under Hero section  -->
+    Slope Image under Hero section 
 
     <img src="/src/assets/slops.jpg" class="w-full relative ">
 
-    <!-- Automatic Scroll horizontaly -->
+    Automatic Scroll horizontaly
 
     <section
       class="relative top-7 mx-auto  h-15 flex bg-white justify-evenly items-center mb-7 mt-3 overflow-hidden">
@@ -124,7 +124,7 @@
       Accept Payment with Razorpay Payments Suits
     </h1>
 
-    <!-- Second Section  which provides us the information of Payment Gateway  -->
+    Second Section  which provides us the information of Payment Gateway 
 
     <section class="w-full   overflow-x-hidden relative top-20 mt-6 mb-6">
       <div
@@ -160,7 +160,7 @@
       </div>
     </section>
 
-    <!-- Functionality or Cards -->
+    Functionality or Cards
 
     <section class="w-full mt-7 relative top-20">
       <div class="Accept w-270 m-auto flex flex-wrap items-center justify-evenly gap-4">
@@ -232,7 +232,7 @@
       </div>
     </section>
 
-    <!--Accept Payment sticky section  -->
+    Accept Payment sticky section 
 
     <section class="w-full sticky top-22.5 mt-22.5 mb-15">
       <div class="Accept w-255 mt-15 mb-15 p-15 m-auto bg-gray-50 border-gray-900 shadow-md">
@@ -330,7 +330,7 @@
       </div>
     </section>
 
-    <!--Make Payouts sticky section  -->
+    Make Payouts sticky section 
 
     <section class="w-full sticky top-26.25 mt-15 mb-15">
       <div class="Accept w-270 mt-15 mb-15 p-15 m-auto bg-gray-50 border-gray-900 shadow-md">
@@ -428,7 +428,7 @@
       </div>
     </section>
 
-    <!--Start Business Banking sticky section  -->
+    Start Business Banking sticky section 
 
     <section class="w-full sticky top-33.7 mt-15 mb-15">
       <div class="Accept w-270 mt-15 mb-15 p-15 m-auto bg-gray-50 border-gray-900 shadow-md">
@@ -530,7 +530,7 @@
       </div>
     </section>
 
-    <!-- E-commerce section -->
+    E-commerce section
 
     <section class="w-full relative top-12.5 mt-15 mb-15">
       <div class="Accept w-280 mt-15 pb-15 p-4 bg-white m-auto  border-gray-900 shadow-md">
@@ -595,7 +595,7 @@
     </section>
 
 
-    <!-- Up and Down slop section -->
+    Up and Down slop section
 
     <section class="w-full flex justify-center flex-col bg-blue-600 relative top-0 text-white">
       <div class="m-auto flex flex-col justify-evenly text-center items-center max-w-100 ">
@@ -670,12 +670,12 @@
       </div>
     </section>
 
-    <!-- Upper slop image -->
+    Upper slop image
 
     <img src="/src/assets/600_down_slop.jpg" class="w-full relative -top-1.5">
 
 
-    <!-- AutoScrolled Section -->
+    AutoScrolled Section
 
     <section class="w-full relative top-0">
       <div class="  flex flex-wrap bg-white p-6 justify-evenly items-center  ">
@@ -708,8 +708,26 @@
 
   </div> -->
 
-  <script type="module" src="/src/main.jsx"></script>
-  <script src="/script.js" defer></script>
+   <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
 </body>
 
 </html>
