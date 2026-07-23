@@ -1,5 +1,6 @@
 import React from 'react';
 import RazorTransaction from '..//assets/razor_transaction.png'
+import CheckMark from '../assets/icons8-check-mark-48.png'
 const PaymentGateway = () => {
   return (
     <div>
@@ -30,27 +31,27 @@ const PaymentGateway = () => {
             {/* Feature List */}
             <ul className="flex flex-col gap-3 mb-8 w-full">
               <li className="font-semibold text-gray-700 opacity-80 flex items-center gap-3">
-                <img src="/src/assets/icons8-check-mark-48.png" alt="Check" className="w-4 h-4" />
+                <img src={CheckMark} alt="Check" className="w-4 h-4" />
                 100+ Payment Methods
               </li>
               <li className="font-semibold text-gray-700 opacity-80 flex items-center gap-3">
-                <img src="/src/assets/icons8-check-mark-48.png" alt="Check" className="w-4 h-4" />
+                <img src={CheckMark} alt="Check" className="w-4 h-4" />
                 Industry Leading Success Rate
               </li>
               <li className="font-semibold text-gray-700 opacity-80 flex items-center gap-3">
-                <img src="/src/assets/icons8-check-mark-48.png" alt="Check" className="w-4 h-4" />
+                <img src={CheckMark} alt="Check" className="w-4 h-4" />
                 Superior Checkout Experience
               </li>
               <li className="font-semibold text-gray-700 opacity-80 flex items-center gap-3">
-                <img src="/src/assets/icons8-check-mark-48.png" alt="Check" className="w-4 h-4" />
+                <img src={CheckMark} alt="Check" className="w-4 h-4" />
                 Easy to Integrate
               </li>
               <li className="font-semibold text-gray-700 opacity-80 flex items-center gap-3">
-                <img src="/src/assets/icons8-check-mark-48.png" alt="Check" className="w-4 h-4" />
+                <img src={CheckMark} alt="Check" className="w-4 h-4" />
                 Instant Settlements from 1 day
               </li>
               <li className="font-semibold text-gray-700 opacity-80 flex items-center gap-3">
-                <img src="/src/assets/icons8-check-mark-48.png" alt="Check" className="w-4 h-4" />
+                <img src={CheckMark} alt="Check" className="w-4 h-4" />
                 In-depth Reporting and Insights
               </li>
             </ul>

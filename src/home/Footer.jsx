@@ -27,9 +27,9 @@ const Footer = () => {
               id="scroll-container"
               className="w-full h-full flex flex-col items-center overflow-y-auto space-y-4 p-4 scrollbar-none"
             >
-              <img src="/src/assets/company1.jpg" alt="Partner Company 1" className="w-64 h-auto object-cover rounded-lg shadow-sm" />
-              <img src="/src/assets/company2.jpg" alt="Partner Company 2" className="w-64 h-auto object-cover rounded-lg shadow-sm" />
-              <img src="/src/assets/company3.jpg" alt="Partner Company 3" className="w-64 h-auto object-cover rounded-lg shadow-sm" />
+              <img src={Company1} alt="Partner Company 1" className="w-64 h-auto object-cover rounded-lg shadow-sm" />
+              <img src={Company2} alt="Partner Company 2" className="w-64 h-auto object-cover rounded-lg shadow-sm" />
+              <img src={Company3} alt="Partner Company 3" className="w-64 h-auto object-cover rounded-lg shadow-sm" />
             </div>
 
             {/* Top Fade Gradient */}
