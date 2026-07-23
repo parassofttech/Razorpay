@@ -1,4 +1,9 @@
 import React from 'react';
+import Rocket from '../assets/rocket.png'
+import Integration from '../assets/integration.png'
+import System from '../assets/system.png'
+import BankAccount from '../assets/bank-account.png'
+import DownSlop from '../assets/600_down_slop.jpg'
 
 const Feature = () => {
   return (
@@ -20,7 +25,7 @@ const Feature = () => {
           <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
             <div className="flex flex-col gap-4 mb-4">
               <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
-                <img src="/src/assets/rocket.png" alt="Rocket Icon" className="w-6 h-6 invert" />
+                <img src={Rocket} alt="Rocket Icon" className="w-6 h-6 invert" />
               </div>
               <h3 className="text-xl font-bold">Instant Activation</h3>
             </div>
@@ -33,7 +38,7 @@ const Feature = () => {
           <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
             <div className="flex flex-col gap-4 mb-4">
               <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
-                <img src="/src/assets/integration.png" alt="Integration Icon" className="w-6 h-6 invert" />
+                <img src={Integration} alt="Integration Icon" className="w-6 h-6 invert" />
               </div>
               <h3 className="text-xl font-bold">Easy Integration</h3>
             </div>
@@ -46,7 +51,7 @@ const Feature = () => {
           <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
             <div className="flex flex-col gap-4 mb-4">
               <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
-                <img src="/src/assets/system.png" alt="API Icon" className="w-6 h-6 invert" />
+                <img src={System} alt="API Icon" className="w-6 h-6 invert" />
               </div>
               <h3 className="text-xl font-bold">API Driven</h3>
             </div>
@@ -59,7 +64,7 @@ const Feature = () => {
           <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
             <div className="flex flex-col gap-4 mb-4">
               <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
-                <img src="/src/assets/bank-account.png" alt="Payment Methods Icon" className="w-6 h-6 invert" />
+                <img src={BankAccount} alt="Payment Methods Icon" className="w-6 h-6 invert" />
               </div>
               <h3 className="text-xl font-bold">100+ Payment Methods</h3>
             </div>
@@ -73,7 +78,7 @@ const Feature = () => {
 
       {/* Bottom Transition Slope Image */}
       <div className="w-full overflow-hidden leading-none">
-        <img src="/src/assets/600_down_slop.jpg" alt="Slope Shape" className="w-full block -mt-1" />
+        <img src={DownSlop} alt="Slope Shape" className="w-full block -mt-1" />
       </div>
     </div>
   );

@@ -1,5 +1,10 @@
 import React from 'react';
-
+import PaymentLink from '../assets/icons8-link-30.png'
+import PaymentPage from '../assets/payment-method.png'
+import PayButton from '../assets/pay-per-click.png'
+import Subscription from '../assets/icons8-exchange-rupee-64.png'
+import Route from '../assets/icons8-usb-connector-50.png'
+import Collect from '../assets/icons8-usb-connector-50.png'
 const Functionality = () => {
   return (
     <div>
@@ -12,7 +17,7 @@ const Functionality = () => {
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Payment Links</h3>
                 <div className="bg-blue-600 rounded-full p-2.5 flex items-center justify-center">
-                  <img src="/src/assets/icons8-link-30.png" alt="Link Icon" className="w-6 h-6 invert" />
+                  <img src={PaymentLink} alt="Link Icon" className="w-6 h-6 invert" />
                 </div>
               </div>
               <p className="text-sm opacity-80 mb-6 leading-relaxed">
@@ -30,7 +35,7 @@ const Functionality = () => {
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Payment Pages</h3>
                 <div className="bg-blue-600 rounded-full p-2.5 flex items-center justify-center">
-                  <img src="/src/assets/payment-method.png" alt="Pages Icon" className="w-6 h-6 invert" />
+                  <img src={PaymentPage} alt="Pages Icon" className="w-6 h-6 invert" />
                 </div>
               </div>
               <p className="text-sm opacity-80 mb-6 leading-relaxed">
@@ -48,7 +53,7 @@ const Functionality = () => {
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Payment Buttons</h3>
                 <div className="bg-blue-600 rounded-full p-2.5 flex items-center justify-center">
-                  <img src="/src/assets/pay-per-click.png" alt="Button Icon" className="w-6 h-6 invert" />
+                  <img src={PayButton} alt="Button Icon" className="w-6 h-6 invert" />
                 </div>
               </div>
               <p className="text-sm opacity-80 mb-6 leading-relaxed">
@@ -66,7 +71,7 @@ const Functionality = () => {
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Subscription</h3>
                 <div className="bg-blue-600 rounded-full p-2.5 flex items-center justify-center">
-                  <img src="/src/assets/icons8-exchange-rupee-64.png" alt="Subscription Icon" className="w-6 h-6 invert" />
+                  <img src={Subscription} alt="Subscription Icon" className="w-6 h-6 invert" />
                 </div>
               </div>
               <p className="text-sm opacity-80 mb-6 leading-relaxed">
@@ -84,7 +89,7 @@ const Functionality = () => {
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Route</h3>
                 <div className="bg-blue-600 rounded-full p-2.5 flex items-center justify-center">
-                  <img src="/src/assets/icons8-usb-connector-50.png" alt="Route Icon" className="w-6 h-6 invert" />
+                  <img src={Route} alt="Route Icon" className="w-6 h-6 invert" />
                 </div>
               </div>
               <p className="text-sm opacity-80 mb-6 leading-relaxed">
@@ -102,7 +107,7 @@ const Functionality = () => {
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Smart Collect</h3>
                 <div className="bg-blue-600 rounded-full p-2.5 flex items-center justify-center">
-                  <img src="/src/assets/icons8-usb-connector-50.png" alt="Smart Collect Icon" className="w-6 h-6 invert" />
+                  <img src={Collect} alt="Smart Collect Icon" className="w-6 h-6 invert" />
                 </div>
               </div>
               <p className="text-sm opacity-80 mb-6 leading-relaxed">
