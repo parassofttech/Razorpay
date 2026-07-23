@@ -1,72 +1,67 @@
-import React from 'react'
+import React from 'react';
 
 const Ecommmerce = () => {
   return (
     <div>
-      <section class="w-full relative top-12.5 mt-15 mb-15">
-      <div class="Accept w-280 mt-15 pb-15 p-4 bg-white m-auto  border-gray-900 shadow-md">
+      <section className="w-full relative my-16">
+        <div className="max-w-7xl mx-auto px-4 py-10 bg-gray-50 border border-gray-200 shadow-md rounded-xl">
 
-        <h1 class="text-2xl font-bold">Start Business Banking</h1>
+          <h1 className="text-2xl font-bold mb-6">Empower Your Business</h1>
 
-        <nav class="Accept_nav w-full  flex mt-4 mb-4 gap-4 justify-between whitespace-nowrap overflow-x-auto">
+          {/* Navigation Filter Buttons */}
+          <nav className="w-full flex mt-4 mb-8 gap-4 justify-start md:justify-between overflow-x-auto whitespace-nowrap scrollbar-none">
+            <li>
+              <button className="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">Top Products</button>
+            </li>
+            <li>
+              <button className="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">On Website/App</button>
+            </li>
+            <li>
+              <button className="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">Plugins</button>
+            </li>
+            <li>
+              <button className="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">On Social Media</button>
+            </li>
+            <li>
+              <button className="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">In Store</button>
+            </li>
+            <li>
+              <button className="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">Cross Border</button>
+            </li>
+            <li>
+              <button className="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">With Smart Add-Ons</button>
+            </li>
+          </nav>
 
-          <li><button class="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">Top
-              Products</button>
-          </li>
+          {/* E-commerce Feature Banner Card */}
+          <div className="w-full mb-6">
+            <div className="w-full bg-blue-950 rounded-2xl overflow-hidden shadow-lg flex flex-col md:flex-row items-center justify-between p-8 md:p-12">
+              
+              {/* Text Section */}
+              <div className="w-full md:w-1/2 flex flex-col items-start text-left">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                  Empower your <span className="text-green-400">e-commerce business</span>
+                </h2>
+                <p className="mt-6 mb-8 text-sm sm:text-base text-white/75 leading-relaxed">
+                  Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
+                </p>
+                <button className="px-5 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg text-white font-bold text-xs cursor-pointer transition-colors shadow-md">
+                  See Solution
+                </button>
+              </div>
 
-          <li><button class="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">On
-              Website/App</button></li>
-
-          <li><button class="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">Plugins</button>
-          </li>
-
-          <li><button class="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">On Social
-              Media</button></li>
-
-          <li><button class="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">In Store</button>
-          </li>
-
-          <li><button class="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">Cross
-              Border</button>
-          </li>
-
-          <li><button class="font-bold opacity-55 hover:text-black hover:opacity-100 cursor-pointer">With Smart
-              Ad-Ons</button></li>
-        </nav>
-
-
-        <div class="flex  mb-6 
-        w-full">
-
-          <Cards class="w-full e-commerce ">
-
-
-            <div class="flex overflow-hidden   mt-7 mb-6">
-              <div class="e_com_text bg-white w-[40%] m-10 p-6 rounded-2xl">
-                <h1 class="text-4xl font-bold pl-2 mt-4 text-black">Empower your <span class="text-green-500">e-commerce
-                    business</span>
-                </h1>
-                <p class="pl-2 mt-6 mb-6  text-black opacity-70">Streamline payment management with a unified dashboard,
-                  enabling both online and in-person payment collection while enhancing conversion rates and minimizing
-                  fraud.</p>
-                <button
-                  class="mx-2 mt-7  p-3 px-4 bg-blue-800 hover:bg-blue-700 rounded text-white font-bold text-xs cursor-pointer">See
-                  Solution</button>
+              {/* Optional Right Graphic Space */}
+              <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
+                {/* Add an illustrative image here if desired */}
               </div>
 
             </div>
-          </Cards>
-
-
-
-
-
+          </div>
 
         </div>
-        </div>
-    </section>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Ecommmerce
+export default Ecommmerce;

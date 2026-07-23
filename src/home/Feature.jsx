@@ -1,83 +1,82 @@
-import React from 'react'
+import React from 'react';
 
 const Feature = () => {
   return (
     <div>
-      <section class="w-full flex justify-center flex-col bg-blue-600 relative top-0 text-white">
-      <div class="m-auto flex flex-col justify-evenly text-center items-center max-w-100 ">
-        <h1 class="text-2xl font-bold pt-4">Features</h1>
-        <p class="opacity-75 pt-3 p-3">Inprove your business with all the right tools to accept online payments and
-          provide
-          the best customer
-          experiance</p>
+      <section className="w-full flex justify-center flex-col bg-blue-600 relative top-0 text-white py-16">
+        
+        {/* Section Header */}
+        <div className="m-auto flex flex-col justify-evenly text-center items-center max-w-xl px-4">
+          <h2 className="text-3xl font-bold pt-4">Features</h2>
+          <p className="opacity-85 pt-3 leading-relaxed">
+            Improve your business with all the right tools to accept online payments and provide the best customer experience.
+          </p>
+        </div>
+
+        {/* Features Cards Container */}
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pt-10">
+          
+          {/* Feature 1 */}
+          <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
+            <div className="flex flex-col gap-4 mb-4">
+              <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
+                <img src="/src/assets/rocket.png" alt="Rocket Icon" className="w-6 h-6 invert" />
+              </div>
+              <h3 className="text-xl font-bold">Instant Activation</h3>
+            </div>
+            <p className="text-sm opacity-80 leading-relaxed">
+              Get onboarded quickly with seamless verification and start accepting payments right away.
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
+            <div className="flex flex-col gap-4 mb-4">
+              <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
+                <img src="/src/assets/integration.png" alt="Integration Icon" className="w-6 h-6 invert" />
+              </div>
+              <h3 className="text-xl font-bold">Easy Integration</h3>
+            </div>
+            <p className="text-sm opacity-80 leading-relaxed">
+              Integrate plugins easily with your website or app using well-documented developer tools.
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
+            <div className="flex flex-col gap-4 mb-4">
+              <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
+                <img src="/src/assets/system.png" alt="API Icon" className="w-6 h-6 invert" />
+              </div>
+              <h3 className="text-xl font-bold">API Driven</h3>
+            </div>
+            <p className="text-sm opacity-80 leading-relaxed">
+              Build custom workflows and automate your financial operations seamlessly with robust APIs.
+            </p>
+          </div>
+
+          {/* Feature 4 */}
+          <div className="flex flex-col bg-blue-700/40 p-6 rounded-xl border border-blue-500/30">
+            <div className="flex flex-col gap-4 mb-4">
+              <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center p-2 shadow-inner">
+                <img src="/src/assets/bank-account.png" alt="Payment Methods Icon" className="w-6 h-6 invert" />
+              </div>
+              <h3 className="text-xl font-bold">100+ Payment Methods</h3>
+            </div>
+            <p className="text-sm opacity-80 leading-relaxed">
+              Allow your customers to pay using credit/debit cards, UPI, net banking, wallets, and more.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Bottom Transition Slope Image */}
+      <div className="w-full overflow-hidden leading-none">
+        <img src="/src/assets/600_down_slop.jpg" alt="Slope Shape" className="w-full block -mt-1" />
       </div>
-      <div class="Accept w-270 m-auto flex flex-wrap items-center justify-evenly gap-4 pt-5">
-        <li class="w-62.5">
-
-
-          <div class="flex flex-col gap-7 p-2">
-            <div class="bg-blue-800 rounded-[50%] w-10"><img src="/src/assets/rocket.png" width="40px"
-                class="p-2 invert-100"/>
-            </div>
-            <h1 class="text-[20px] font-bold">Instante Activation</h1>
-          </div>
-
-
-          <p class="p-2 opacity-80 pb-7">Share Payment via an Email, SMS, messenger, chatbord etc. and get paid
-            immidiatly.</p>
-        </li>
-
-
-        <li class="w-62.5">
-
-
-          <div class="flex flex-col gap-7 p-2">
-            <div class="bg-blue-800 rounded-[50%] w-10"><img src="/src/assets/integration.png" width="40px"
-                class="p-2 invert-100"/>
-            </div>
-            <h1 class="text-[20px] font-bold">Easy Integrate</h1>
-          </div>
-
-
-          <p class="p-2 opacity-80 pb-7">Share Payment via an Email, SMS, messenger, chatbord etc. and get paid
-            immidiatly.</p>
-        </li>
-
-        <li class="w-62.5">
-
-
-          <div class="flex flex-col gap-7 p-2">
-            <div class="bg-blue-800 rounded-[50%] w-10"><img src="/src/assets/system.png" width="40px"
-                class="p-2 invert-100"/>
-            </div>
-            <h1 class="text-[20px] font-bold">API Driven</h1>
-          </div>
-
-
-          <p class="p-2 opacity-80 pb-7">Share Payment via an Email, SMS, messenger, chatbord etc. and get paid
-            immidiatly.</p>
-        </li>
-
-
-        <li class="w-62.5">
-
-
-          <div class="flex flex-col gap-7 p-2">
-            <div class="bg-blue-800 rounded-[50%] w-10"><img src="/src/assets/bank-account.png" width="40px"
-                class="p-2 invert-100"/>
-            </div>
-            <h1 class="text-[20px] font-bold">100+ Payment Methods</h1>
-          </div>
-
-
-          <p class="p-2 opacity-80 pb-7">Share Payment via an Email, SMS, messenger, chatbord etc. and get paid
-            immidiatly.</p>
-        </li>
-      </div>
-    </section>
-    <img src="/src/assets/600_down_slop.jpg" class="w-full relative -top-1.5"/>
     </div>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

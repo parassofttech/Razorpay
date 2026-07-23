@@ -15,7 +15,7 @@ const Home = () => {
     <div>
       <Navbar/>
       <HeroSection/>
-      {/* <PaymentGateway/>
+      <PaymentGateway/>
       
       <Functionality/>
       <AcceptPayments/>
@@ -23,7 +23,7 @@ const Home = () => {
       <BusinessBanking/>
       <Ecommmerce/>
       <Feature/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 }
