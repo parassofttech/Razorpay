@@ -1,5 +1,5 @@
 import React from 'react';
-
+import RazorTransaction from '..//assets/razor_transaction.png'
 const PaymentGateway = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const PaymentGateway = () => {
           {/* Left Image Column */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <img 
-              src="/src/assets/razor_transaction.png" 
+              src={RazorTransaction} 
               alt="Razorpay Transaction Illustration" 
               className="w-full max-w-md lg:max-w-lg rounded-2xl object-cover shadow-sm"
             />

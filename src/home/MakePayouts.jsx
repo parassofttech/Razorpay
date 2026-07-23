@@ -1,5 +1,10 @@
 import React from 'react';
-
+import OnloneMoney from '../assets/Online-Mony Transfer.webp'
+import PayNetwork from '../assets/payment-network.webp'
+import PayRequest from '../assets/payment-request.webp'
+import PayReversal from '../assets/paymentReversal.webp'
+import PayOperation from '../assets/paymentOperation.webp'
+import ArrowRight from '../assets/arrow-upper-right.png'
 const MakePayouts = () => {
   return (
     <div>
@@ -40,10 +45,10 @@ const MakePayouts = () => {
               {/* Card 1 */}
               <div className="w-72 bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                  <img src="/src/assets/Online-Mony Transfer.webp" alt="Online Money Transfer" className="w-full h-48 object-cover" />
+                  <img src={OnloneMoney} alt="Online Money Transfer" className="w-full h-48 object-cover" />
                   <div className="flex gap-4 items-center p-4 pb-2">
                     <h3 className="text-lg font-medium text-gray-900">Payment Gateway</h3>
-                    <img src="/src/assets/arrow-upper-right.png" alt="Arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="Arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="px-4 text-sm text-gray-600 opacity-80 mb-6">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.
@@ -57,10 +62,10 @@ const MakePayouts = () => {
               {/* Card 2 */}
               <div className="w-72 bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                  <img src="/src/assets/payment-network.webp" alt="Payment Network" className="w-full h-48 object-cover" />
+                  <img src={PayNetwork} alt="Payment Network" className="w-full h-48 object-cover" />
                   <div className="flex gap-4 items-center p-4 pb-2">
                     <h3 className="text-lg font-medium text-gray-900">Payment Gateway</h3>
-                    <img src="/src/assets/arrow-upper-right.png" alt="Arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="Arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="px-4 text-sm text-gray-600 opacity-80 mb-6">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.
@@ -74,10 +79,10 @@ const MakePayouts = () => {
               {/* Card 3 */}
               <div className="w-72 bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                  <img src="/src/assets/payment-request.webp" alt="Payment Request" className="w-full h-48 object-cover" />
+                  <img src={PayRequest} alt="Payment Request" className="w-full h-48 object-cover" />
                   <div className="flex gap-4 items-center p-4 pb-2">
                     <h3 className="text-lg font-medium text-gray-900">Payment Gateway</h3>
-                    <img src="/src/assets/arrow-upper-right.png" alt="Arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="Arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="px-4 text-sm text-gray-600 opacity-80 mb-6">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.
@@ -91,10 +96,10 @@ const MakePayouts = () => {
               {/* Card 4 */}
               <div className="w-72 bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                  <img src="/src/assets/paymentReversal.webp" alt="Payment Reversal" className="w-full h-48 object-cover" />
+                  <img src={PayReversal} alt="Payment Reversal" className="w-full h-48 object-cover" />
                   <div className="flex gap-4 items-center p-4 pb-2">
                     <h3 className="text-lg font-medium text-gray-900">Payment Gateway</h3>
-                    <img src="/src/assets/arrow-upper-right.png" alt="Arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="Arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="px-4 text-sm text-gray-600 opacity-80 mb-6">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.
@@ -108,10 +113,10 @@ const MakePayouts = () => {
               {/* Card 5 */}
               <div className="w-72 bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                  <img src="/src/assets/paymentOperation.webp" alt="Payment Operation" className="w-full h-48 object-cover" />
+                  <img src={PayOperation} alt="Payment Operation" className="w-full h-48 object-cover" />
                   <div className="flex gap-4 items-center p-4 pb-2">
                     <h3 className="text-lg font-medium text-gray-900">Payment Gateway</h3>
-                    <img src="/src/assets/arrow-upper-right.png" alt="Arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="Arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="px-4 text-sm text-gray-600 opacity-80 mb-6">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.

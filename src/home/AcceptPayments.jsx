@@ -1,5 +1,9 @@
 import React from 'react';
-
+import ArrowRight from '../assets/arrow-upper-right.png'
+import RBI from '../assets/RBI-Authorized.jpg'
+import Transacction from '../assets/razorpay-transaction-boy.png'
+import PAymentOperation from '../assets/paymentOperation.webp'
+import Support from '../assets/razorpay-girl.png'
 const AcceptPayments = () => {
   return (
     <div>
@@ -43,7 +47,7 @@ const AcceptPayments = () => {
                 <div className="p-4">
                   <div className="flex gap-2 items-center mb-2">
                     <h2 className="text-lg font-semibold">Payment Gateway</h2>
-                    <img src="/src/assets/arrow-upper-right.png" alt="arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="text-sm opacity-80 mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.</p>
                   <button className="text-blue-700 text-sm font-bold cursor-pointer hover:underline">Sign Up →</button>
@@ -52,11 +56,11 @@ const AcceptPayments = () => {
 
               {/* Card 2 */}
               <div className="w-72 bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden flex flex-col justify-between">
-                <img src="/src/assets/RBI-Authorized.jpg" alt="RBI Authorized" className="h-48 w-full object-cover" />
+                <img src={RBI} alt="RBI Authorized" className="h-48 w-full object-cover" />
                 <div className="p-4">
                   <div className="flex gap-2 items-center mb-2">
                     <h2 className="text-lg font-semibold">Payment Gateway</h2>
-                    <img src="/src/assets/arrow-upper-right.png" alt="arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight}alt="arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="text-sm opacity-80 mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.</p>
                   <button className="text-blue-700 text-sm font-bold cursor-pointer hover:underline">Sign Up →</button>
@@ -65,11 +69,11 @@ const AcceptPayments = () => {
 
               {/* Card 3 */}
               <div className="w-72 bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden flex flex-col justify-between">
-                <img src="/src/assets/razorpay-transaction-boy.png" alt="Transaction Boy" className="h-48 w-full object-cover" />
+                <img src={Transacction} alt="Transaction Boy" className="h-48 w-full object-cover" />
                 <div className="p-4">
                   <div className="flex gap-2 items-center mb-2">
                     <h2 className="text-lg font-semibold">Payment Gateway</h2>
-                    <img src="/src/assets/arrow-upper-right.png" alt="arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="text-sm opacity-80 mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.</p>
                   <button className="text-blue-700 text-sm font-bold cursor-pointer hover:underline">Sign Up →</button>
@@ -78,11 +82,11 @@ const AcceptPayments = () => {
 
               {/* Card 4 */}
               <div className="w-72 bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden flex flex-col justify-between">
-                <img src="/src/assets/paymentOperation.webp" alt="Payment Operation" className="h-48 w-full object-cover" />
+                <img src={PAymentOperation} alt="Payment Operation" className="h-48 w-full object-cover" />
                 <div className="p-4">
                   <div className="flex gap-2 items-center mb-2">
                     <h2 className="text-lg font-semibold">Payment Gateway</h2>
-                    <img src="/src/assets/arrow-upper-right.png" alt="arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="text-sm opacity-80 mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.</p>
                   <button className="text-blue-700 text-sm font-bold cursor-pointer hover:underline">Sign Up →</button>
@@ -91,11 +95,11 @@ const AcceptPayments = () => {
 
               {/* Card 5 */}
               <div className="w-72 bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden flex flex-col justify-between">
-                <img src="/src/assets/razorpay-girl.png" alt="Razorpay Support" className="h-48 w-full object-cover" />
+                <img src={Support} alt="Razorpay Support" className="h-48 w-full object-cover" />
                 <div className="p-4">
                   <div className="flex gap-2 items-center mb-2">
                     <h2 className="text-lg font-semibold">Payment Gateway</h2>
-                    <img src="/src/assets/arrow-upper-right.png" alt="arrow" className="opacity-55 w-3 h-3" />
+                    <img src={ArrowRight} alt="arrow" className="opacity-55 w-3 h-3" />
                   </div>
                   <p className="text-sm opacity-80 mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat molestiae.</p>
                   <button className="text-blue-700 text-sm font-bold cursor-pointer hover:underline">Sign Up →</button>

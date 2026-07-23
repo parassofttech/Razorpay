@@ -1,5 +1,7 @@
 import React from 'react';
-
+import Company1 from '../assets/company1.jpg'
+import Company2 from '../assets/company2.jpg'
+import Company3 from '../assets/company3.jpg'
 const Footer = () => {
   return (
     <div>
